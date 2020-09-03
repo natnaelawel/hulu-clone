@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./MovieDetail.css";
 import Header from "../Header/Header";
-// import Nav from "../Nav/Nav";
-import Footer from "../Footer/Footer";
 import request from "../../API/Request";
 import { useParams } from "react-router-dom";
 import "./MovieDetail.css";

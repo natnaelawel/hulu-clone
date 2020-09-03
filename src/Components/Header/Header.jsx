@@ -2,28 +2,19 @@ import React, { useState, useEffect } from "react";
 import "./Header.css";
 import HomeIcon from "@material-ui/icons/Home";
 import FlashOnIcon from "@material-ui/icons/FlashOn";
-import OndemandVideoIcon from "@material-ui/icons/OndemandVideo";
 import VideoLibraryIcon from "@material-ui/icons/VideoLibrary";
 import SearchIcon from "@material-ui/icons/Search";
 import PersonIcon from "@material-ui/icons/Person";
-import PersonOutlineOutlinedIcon from "@material-ui/icons/PersonOutlineOutlined";
 import PersonOutlinedIcon from "@material-ui/icons/PersonOutlined";
 import LiveTvOutlinedIcon from "@material-ui/icons/LiveTv";
 import requests from "../../API/Request";
 import {
   Paper,
-  InputBase,
-  IconButton,
-  DialogContent,
-  DialogTitle,
   ListItem,
   List,
   ListItemAvatar,
   Avatar,
   ListItemText,
-  Dialog,
-  MenuList,
-  MenuItem,
 } from "@material-ui/core";
 import ReactSearchBox from "react-search-box";
 import { fetchSearchedResult } from "../../API/API";
@@ -54,19 +45,12 @@ function Header({ setMovieType }) {
   //   setOpen(true);
   // };
 
-  const handleClose = () => {
-    setOpen(false);
-  };
   const handleChange = (value) => {
     value === "" ? setOpen(false) : setOpen(true);
     setSearchQueryText(value);
   };
 
   const getImageLink = ({ backdrop_path, poster_path }) => {
-    const image =
-      backdrop_path ||
-      poster_path ||
-      "https://image.tmdb.org/t/p/w600_and_h900_bestv2/TnOeov4w0sTtV2gqICqIxVi74V.jpg";
     const image_url = `https://image.tmdb.org/t/p/original${poster_path}`;
     return image_url;
   };

@@ -1,4 +1,4 @@
-import React, { forwardRef, useEffect, useState } from "react";
+import React, { forwardRef } from "react";
 import "./VideoCard.css";
 import TextTruncate from "react-text-truncate";
 import StarHalfOutlinedIcon from "@material-ui/icons/StarHalfOutlined";
@@ -23,7 +23,7 @@ const VideoCard = forwardRef(
       backdrop_path ||
       poster_path ||
       "/w600_and_h900_bestv2/TnOeov4w0sTtV2gqICqIxVi74V.jpg";
-    const image_url = `https://image.tmdb.org/t/p/original${poster_path}`;
+    const image_url = `https://image.tmdb.org/t/p/original${image}`;
     return (
       <Link
         to={{
