@@ -36,6 +36,7 @@ function Results({ selectedType }) {
               overview={overview}
               poster_path={poster_path}
               key={id}
+              id={id}
               release_date={release_date}
               vote_average={vote_average}
               backdrop_path={backdrop_path}

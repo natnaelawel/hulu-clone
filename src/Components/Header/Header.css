@@ -7,6 +7,12 @@
     width: 100vw;
     padding: 0 20px;
     overflow-x: auto;
+    background-color: #051622;
+    background: linear-gradient(to right, #051422, #042427);
+    opacity: 0.9;
+    z-index: 100;
+    position: fixed !important;
+    top: 0;
 }
 
 /** for chrome safari and opera*/
@@ -25,7 +31,7 @@
 
 .header__icons{
     display: flex;
-    width: 50vw;
+    width: 40vw;
     justify-content: space-between;
     align-items: center;
     
@@ -40,7 +46,7 @@
     width: 100px;
 }
 .header__icon .MuiSvgIcon-root{
-    font-size: 30px;
+    font-size: 25px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -61,3 +67,43 @@
 .header__icon--active p{
     display: inline;
 }
+
+
+.header__right{
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    padding: 0 20px;
+    align-items: center;
+    /* background-color: aqua; */
+    /* display: relative; */
+    /* z-index: 1000; */
+}
+
+.search__field input{
+    margin-left: 0px;
+    background-color: transparent !important;
+    color: white;
+    opacity: 0.8;
+
+}
+.search__result{
+    z-index: 10000 !important;
+    position: fixed;
+    /* top: 20px; */
+    /* left: 810px; */
+    /* right: 300px; */
+    border: 1px solid white;
+    width: 250px;
+    min-height: 40vh;
+    box-shadow: 10px 10px 10px black;
+}
+
+.search__result{
+    z-index: 1000px !important;
+    /* float: right;  */
+    /* margin-top: -80px;  */
+    transform: rotate(360deg)
+}
+
+/* MuiPaper-root search__result MuiPaper-elevation1 MuiPaper-rounded */

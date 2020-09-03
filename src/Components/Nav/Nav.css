@@ -4,6 +4,7 @@
     padding: 10px;
     padding-left: 40px;
     overflow-x: scroll;
+    z-index: 1;
 }
 /** for chrome safari and opera*/
 .nav::-webkit-scrollbar{

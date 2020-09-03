@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+.movie__description {
+    color: white;
+    display: flex;
+    font-family: 'Oswald', sans-serif;
+    /* -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover; */
+    background-size: cover;
+    min-height: 90vh;
+
+    width: 100vw;
+    margin-top: -80px;
+    padding: 80px 20px;
+    /* position: relative; */
+
+}
+
+.movie__description::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 90vh;
+    opacity: .2;
+    background: linear-gradient(to right, #051422, #042427);
+    mix-blend-mode: color;
+    mix-blend-mode: hue;
+    mix-blend-mode: hard-light;
+}
+
+.movie__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 10%;
+    z-index: -1;
+}
+
+.movie__background img {
+    width: 100vw;
+    height: 90vh;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 10%;
+}
+
+
+
+.info__icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor: pointer;
+    /* border: 1px solid red; */
+}
+
+.info__icon p {
+    font-size: 15px;
+    width: 150px;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+}
+
+.info__icon p span{
+    margin-left: 10px;
+}
+
+.movie__info {
+    flex: 0.6;
+    padding: 10px;
+    z-index: 10;
+
+}
+
+.movie__overview {
+    opacity: 0.9;
+    font-size: 15px;
+    text-shadow: #141718 1px ;
+    /* background-color: rgba(0, 0, 0, 0.3); */
+
+}
+.movie__description__detail{
+    width: 60%;
+}
+
+.movie__description__detail div {
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-center;
+}
+
+.movie__description__detail p {
+    font-size: 15px;
+    
+    font-weight: 600 !important;
+}
+.movie__description__detail p span{
+    font-size: 12px;
+    font-weight: lighter !important;
+}
+.movie__genres{
+    display: flex;
+    align-items: center;
+}
+
+.movie__preview {
+    flex: 0.4;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.movie__preview__content{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 240px;
+    cursor: pointer;
+
+}
+.movie__preview__image{
+    z-index: 1220;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.movie__preview__image > img{
+    animation-name: play_button;
+    -webkit-animation: play_button;
+    animation: play_button infinite 0s;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-in;
+}
+
+@-webkit-keyframes play_button {
+    from {
+        width: 150px;
+        height: 150px;
+    }
+
+    to {
+        width: 170px;
+        height: 170px;
+    }
+}
+@keyframes play_button {
+    from {
+        width: 150px;
+        height: 150px;
+    }
+
+    to {
+        width: 170px;
+        height: 170px;
+    }
+}
+.watch__trailor__button{
+    display: none !important;
+}
+@media (max-width:700px){
+    .movie__preview{
+        display: none !important;
+    }
+    .watch__trailor__button{
+        display: inline !important;
+    }
+    .movie__info{
+        flex: 1;
+    }
+    
+}
+
+
+@media screen and (max-width: 1024px) {
+
+    /* Specific to this particular image */
+    .movie__description {
+        height: 50%;
+        /* left: 50%; */
+        /* margin-left: -512px; */
+    }
+}
+
+
+/**
+.movie__preview__image > img{
+    /* animation-name: play_button;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-in; */
+
+
+
+    /* animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: play__button; */
+
+
+    /* .loader:before {
+        z-index: 2;
+        -webkit-animation: gogoloader 2s infinite;
+        -moz-animation: gogoloader 2s infinite;
+        -o-animation: gogoloader 2s infinite;
+        animation: gogoloader 2s infinite;
+        animation-duration: 2s;
+        animation-timing-function: ease;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+        animation-direction: normal;
+        animation-fill-mode: none;
+        animation-play-state: running;
+        animation-name: gogoloader;
+    }
+    
+    .loader:before, .loader:after {
+        opacity: 0;
+        box-sizing: border-box;
+        content: "\0020";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 100px;
+        border: 5px solid #fff;
+        box-shadow: 0 0 50px #fff, inset 0 0 50px #fff; */
+    /* } */
+/* } */
+/* .loader:before, .loader:after {
+    opacity: 0;
+    box-sizing: border-box;
+    content: "\0020";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 100px;
+    border: 5px solid #fff;
+    box-shadow: 0 0 50px #fff, inset 0 0 50px #fff;
+} */
+/* .loader:before {
+        z-index: 2;
+        -webkit-animation: play__button 2s infinite;
+        -moz-animation: play__button 2s infinite;
+        -o-animation: play__button 2s infinite;
+        animation: play__button 2s infinite;
+        animation-duration: 2s;
+        animation-timing-function: ease;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+        animation-direction: normal;
+        animation-fill-mode: none;
+        animation-play-state: running;
+        animation-name: play__button;
+    } */
+

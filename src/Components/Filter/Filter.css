@@ -1,0 +1,147 @@
+.filter{
+    /* border: 1px solid white; */
+    background-color: #050b0f !important;
+    /* height: 60vh; */
+}
+
+.card{
+    background-color: transparent !important;
+    color: white !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid white !important; */
+    width: 70%;
+    margin: 0 auto;
+
+}
+@media(max-width: 1100px){
+    .card{
+        width: 80%;
+    }
+}
+
+@media(max-width: 1000px){
+    .card{
+        width: 90%;
+    }
+}
+
+@media(max-width: 900px){
+    .card{
+        width: 100%;
+    }
+}
+
+
+
+.card__content{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media(max-width: 720px){
+    .card__content{
+       flex-direction: column;
+    }
+}
+.sort__by{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid white; */
+
+}
+.sort__by__buttons{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* border: 1px solid white; */
+}
+
+.type__selection{
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-start; */
+    /* border: 1px solid white; */
+    /* justify-content: space-between; */
+}
+
+fieldset.film_type{
+    display: flex !important;
+    /* border: 1px solid white; */
+    /* color: white !important; */
+}
+.film_type_option_list{
+    display: flex;
+    flex-direction: row !important;
+    /* border: 1px solid white; */
+
+}
+span.MuiIconButton-label{
+    color: white !important;
+}
+
+
+.film_type_radio{
+    /* display: flex !important; */
+}
+
+.release_date{
+    /* display: flex; */
+    /* justify-content: space-between !important; */
+    
+}
+.type__selection{
+    /* border: 1px solid white; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: flex-start; */
+}
+.type__selection fieldset{
+    /* display: flex !important; */
+}
+/* .film_type{
+    display: flex !important;
+    border: 1px solid white;
+    justify-content: flex-start;
+    align-items: flex-start;
+} */
+/* .MuiFormControl-root{
+    display: flex !important;
+} */
+.film_type{
+ /* border: 1px solid red;    */
+}
+/* .MuiFormGroup-root{
+    border: 1px solid white;
+    width: 45vw;
+    border-radius: 10px;
+    padding: 0 20px;
+    display:flex !important;
+    flex-direction: row !important;
+} */
+.MuiFormGroup-root label{
+    /* border: 1px solid red; */
+}
+.MuiFormGroup-root Radio{
+    /* color: white; */
+}
+
+/* .card__content{
+    display:flex;
+    margin: 0 auto;
+    justify-content: space-between;
+} */
+/* 
+.sort__by{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+} */
+/* .filter__button{
+    display: flex;
+    justify-content: center;
+} */

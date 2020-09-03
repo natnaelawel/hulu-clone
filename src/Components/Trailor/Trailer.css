@@ -1,0 +1,17 @@
+.trailor{
+    margin: 30px auto !important;
+    width: 80vw;
+}
+
+.react__player{
+    width: 80vw !important ;
+    height: 80vh !important;
+}
+
+@media (max-width:700px){
+    .react__player{
+        width: 100% !important;
+        height: 40vh !important;
+    }
+    
+}

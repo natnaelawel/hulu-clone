@@ -13,7 +13,10 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-flip-move": "^3.0.4",
+    "react-player": "^2.6.1",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
+    "react-search-box": "^2.0.2",
     "react-text-truncate": "^0.16.0"
   },
   "scripts": {
