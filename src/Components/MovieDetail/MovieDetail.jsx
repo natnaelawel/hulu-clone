@@ -13,16 +13,17 @@ function MovieDetail() {
 
   console.log("movie is ", id);
   const [movieType, setMovieType] = useState(request.fetchTrending);
-  const [filterToggle, setFilterToggle] = useState(false);
+  // const [filterToggle, setFilterToggle] = useState(false);
   const [movie, setMovie] = useState({});
 
 
-  const image =
-    movie.backdrop_path ||
-    movie.poster_path ||
-    "https://image.tmdb.org/t/p/w600_and_h900_bestv2/TnOeov4w0sTtV2gqICqIxVi74V.jpg";
-  const image_url = `https://image.tmdb.org/t/p/original${image}`;
+  // const image =
+  //   movie.backdrop_path ||
+  //   movie.poster_path ||
+  //   "https://image.tmdb.org/t/p/w600_and_h900_bestv2/TnOeov4w0sTtV2gqICqIxVi74V.jpg";
+  // const image_url = `https://image.tmdb.org/t/p/original${image}`;
   console.log('movie is ', movie)
+  console.log('movie type is ', movieType)
 
   useEffect(() => {
     const fetchData = async () => {
